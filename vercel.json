@@ -1,13 +1,7 @@
 {
-  "name": "kzndhc-website",
-  "version": 1,
-  "builds": [],
-  "routes": [
-    { "src": "/", "dest": "/index.html" },
-    { "src": "/members/join", "dest": "/members/join.html" },
-    { "src": "/members/find", "dest": "/members/find.html" },
-    { "src": "/members/press", "dest": "/members/press.html" },
-    { "src": "/conference", "dest": "/conference/index.html" },
-    { "handle": "filesystem" }
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/conference", "destination": "/conference/index.html" },
+    { "source": "/conference/", "destination": "/conference/index.html" }
   ]
 }
