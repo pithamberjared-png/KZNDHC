@@ -1,0 +1,6 @@
+*.ps1
+*.bin
+*.txt
+*.bak
+.DS_Store
+Thumbs.db
