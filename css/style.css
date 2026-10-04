@@ -232,3 +232,18 @@ h1,h2,h3{font-family:var(--fh);letter-spacing:-.02em;line-height:1.15}
 @media(max-width:480px){.hero h1{font-size:2rem}.container{padding:0 18px}.s-title{font-size:1.5rem}.stats-bar{grid-template-columns:1fr}}.form-status{padding:12px 14px;border-radius:var(--r);margin-bottom:12px;font-size:.88rem;line-height:1.5}
 .form-status.ok{background:#e7f6ec;color:#1e6b3a;border:1px solid #b7e1c4}
 .form-status.err{background:#fdecec;color:#9b2226;border:1px solid #f3c2c2}
+.jvm-badge{display:inline-flex;align-items:center;gap:10px;padding:6px 16px 6px 6px;border-radius:999px;border:1px solid rgba(56,189,248,.25);background:linear-gradient(90deg,rgba(8,47,73,.8),rgba(15,23,42,.8),rgba(8,47,73,.8));transition:transform .3s,box-shadow .3s}
+.jvm-badge:hover{transform:scale(1.03);box-shadow:0 0 24px -6px rgba(14,165,233,.5)}
+.jvm-mark{display:flex;align-items:center;justify-content:center;gap:2.5px;width:24px;height:24px;border-radius:7px;flex-shrink:0;background:linear-gradient(135deg,#38bdf8,#67e8f9);box-shadow:0 0 12px -2px rgba(103,232,249,.7)}
+.jvm-mark span{width:2.5px;height:8px;border-radius:999px;background:rgba(255,255,255,.9);animation:jvm-pulse 1.8s ease-in-out infinite;transform-origin:center}
+.jvm-mark span:nth-child(2){height:14px;background:#fff;animation-delay:150ms}
+.jvm-mark span:nth-child(3){height:10px;animation-delay:300ms}
+.jvm-badge:hover .jvm-mark span{animation-duration:.7s}
+@keyframes jvm-pulse{0%,100%{transform:scaleY(.55);opacity:.75}50%{transform:scaleY(1);opacity:1}}
+@media (prefers-reduced-motion:reduce){.jvm-mark span{animation:none;transform:scaleY(1)}}
+.jvm-sep{width:1px;height:12px;background:rgba(56,189,248,.2)}
+.jvm-word{display:flex;align-items:baseline;gap:6px;line-height:1}
+.jvm-word b{font-size:12px;font-weight:800;letter-spacing:-.02em;background:linear-gradient(90deg,#0ea5e9,#06b6d4,#0ea5e9);background-size:200% auto;-webkit-background-clip:text;background-clip:text;color:transparent;transition:background-position .7s}
+.jvm-badge:hover .jvm-word b{background-position:100% 0}
+.jvm-word i{width:4px;height:4px;border-radius:50%;background:rgba(56,189,248,.5);align-self:center}
+.jvm-word small{font-size:9.5px;font-weight:600;text-transform:uppercase;letter-spacing:.2em;color:rgba(224,242,254,.55)}

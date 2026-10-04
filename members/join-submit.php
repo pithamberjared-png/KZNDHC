@@ -2,7 +2,7 @@
 // Handles the membership application form on join.html and emails it.
 
 // ---- Settings -------------------------------------------------------------
-$RECIPIENT = 'jpithamber@gmail.com';   // where applications are sent (testing)
+$RECIPIENT = 'accounts@kznmcc.co.za';   // where applications are sent
 $SUBJECT   = 'New KZNDHC Membership Application';
 // From address must be on the site's own domain or Gmail will flag/reject it.
 $host = preg_replace('/^www\./', '', $_SERVER['HTTP_HOST'] ?? 'localhost');
